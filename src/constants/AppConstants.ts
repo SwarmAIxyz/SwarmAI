@@ -1,0 +1,31 @@
+export const APP_CONSTANTS = {
+  PREDICTION: {
+    MIN_CONFIDENCE: 0.5,
+    MAX_CONFIDENCE: 1.0,
+    MIN_STAKE: 0.1,
+    MAX_STAKE: 1000,
+    REWARD_MULTIPLIER: 2,
+  },
+  MODEL: {
+    MIN_PERFORMANCE: 0,
+    MAX_PERFORMANCE: 1,
+    INITIAL_WEIGHT: 1,
+    PERFORMANCE_THRESHOLD: 0.7,
+  },
+  AUTH: {
+    TOKEN_EXPIRY: '24h',
+    MIN_REPUTATION: 0,
+    MAX_REPUTATION: 100,
+    VALIDATOR_THRESHOLD: 80,
+  },
+  MARKET: {
+    MIN_PARTICIPANTS: 3,
+    MAX_DURATION: 86400, // 24 hours in seconds
+    SETTLEMENT_DELAY: 300, // 5 minutes in seconds
+  },
+  API: {
+    RATE_LIMIT: 100,
+    CACHE_DURATION: 300,
+    TIMEOUT: 5000,
+  },
+}; 

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+  <!-- Filters and Gradients Definition -->
+  <defs>
+    <!-- Main Gradient -->
+    <linearGradient id="mainGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#9945FF" />
+      <stop offset="50%" style="stop-color:#4374f8" />
+      <stop offset="100%" style="stop-color:#14F195" />
+    </linearGradient>
+    
+    <!-- Highlight Gradient -->
+    <linearGradient id="highlightGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff" stop-opacity="0.8" />
+      <stop offset="100%" style="stop-color:#ffffff" stop-opacity="0" />
+    </linearGradient>
+    
+    <!-- Neon Effect -->
+    <filter id="neonGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    
+    <!-- Emboss Effect -->
+    <filter id="emboss" x="-50%" y="-50%" width="200%" height="200%">
+      <feConvolveMatrix order="3" kernelMatrix="3 0 0 0 0 0 0 0 -3" />
+    </filter>
+    
+    <!-- Particle Effect -->
+    <filter id="particles" x="-50%" y="-50%" width="200%" height="200%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.05" numOctaves="2" seed="5" />
+      <feDisplacementMap in="SourceGraphic" scale="5" />
+    </filter>
+    
+    <!-- Inner Glow -->
+    <filter id="innerGlow">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  
+  <!-- Background Layer -->
+  <g>
+    <!-- Dark Background -->
+    <circle cx="250" cy="250" r="245" fill="#080818" />
+    
+    <!-- Decorative Background Elements - Data Flow Pattern -->
+    <path d="M50,250 C150,100 350,400 450,250" stroke="url(#mainGradient)" stroke-width="0.5" fill="none" opacity="0.15" />
+    <path d="M250,50 C100,150 400,350 250,450" stroke="url(#mainGradient)" stroke-width="0.5" fill="none" opacity="0.15" />
+    
+    <!-- Glow Effect -->
+    <circle cx="250" cy="250" r="200" fill="url(#mainGradient)" opacity="0.05" filter="url(#innerGlow)" />
+  </g>
+  
+  <!-- Core Graphic Elements -->
+  <g>
+    <!-- Central Hexagon - Representing Blockchain Node -->
+    <polygon points="250,170 310,200 310,300 250,330 190,300 190,200" 
+             fill="#101028" stroke="url(#mainGradient)" stroke-width="2" />
+    
+    <!-- Internal Connections - Representing Neural Network -->
+    <g opacity="0.7">
+      <!-- Horizontal Grid -->
+      <line x1="190" y1="220" x2="310" y2="220" stroke="#14F195" stroke-width="0.8" opacity="0.4" />
+      <line x1="190" y1="250" x2="310" y2="250" stroke="#14F195" stroke-width="0.8" opacity="0.4" />
+      <line x1="190" y1="280" x2="310" y2="280" stroke="#14F195" stroke-width="0.8" opacity="0.4" />
+      
+      <!-- Vertical Grid -->
+      <line x1="210" y1="185" x2="210" y2="315" stroke="#4374f8" stroke-width="0.8" opacity="0.4" />
+      <line x1="250" y1="170" x2="250" y2="330" stroke="#4374f8" stroke-width="0.8" opacity="0.4" />
+      <line x1="290" y1="185" x2="290" y2="315" stroke="#4374f8" stroke-width="0.8" opacity="0.4" />
+      
+      <!-- Cross Connections -->
+      <line x1="210" y1="220" x2="290" y2="280" stroke="#9945FF" stroke-width="0.8" opacity="0.4" />
+      <line x1="210" y1="280" x2="290" y2="220" stroke="#9945FF" stroke-width="0.8" opacity="0.4" />
+    </g>
+    
+    <!-- Data Nodes - Representing Collective Intelligence Points -->
+    <g>
+      <circle cx="210" cy="220" r="5" fill="#14F195" />
+      <circle cx="290" cy="220" r="5" fill="#14F195" />
+      <circle cx="210" cy="280" r="5" fill="#14F195" />
+      <circle cx="290" cy="280" r="5" fill="#14F195" />
+      <circle cx="250" cy="220" r="5" fill="#4374f8" />
+      <circle cx="250" cy="280" r="5" fill="#4374f8" />
+      <circle cx="210" cy="250" r="5" fill="#4374f8" />
+      <circle cx="290" cy="250" r="5" fill="#4374f8" />
+    </g>
+    
+    <!-- Center Node - Representing AI Core -->
+    <circle cx="250" cy="250" r="15" fill="url(#mainGradient)" filter="url(#neonGlow)" />
+    <circle cx="250" cy="250" r="7" fill="white" opacity="0.7" />
+  </g>
+  
+  <!-- Outer Orbits - Representing Data Flow and Prediction Network -->
+  <g opacity="0.7" fill="none">
+    <!-- Orbits -->
+    <ellipse cx="250" cy="250" rx="180" ry="180" stroke="url(#mainGradient)" stroke-width="1" opacity="0.4" />
+    <ellipse cx="250" cy="250" rx="190" ry="150" stroke="url(#mainGradient)" stroke-width="1" opacity="0.3" transform="rotate(30 250 250)" />
+    <ellipse cx="250" cy="250" rx="150" ry="190" stroke="url(#mainGradient)" stroke-width="1" opacity="0.3" transform="rotate(60 250 250)" />
+    
+    <!-- Particles on Orbits -->
+    <circle cx="400" cy="250" r="4" fill="#14F195" />
+    <circle cx="100" cy="250" r="4" fill="#14F195" />
+    <circle cx="250" cy="400" r="4" fill="#4374f8" />
+    <circle cx="250" cy="100" r="4" fill="#4374f8" />
+    <circle cx="355" cy="355" r="4" fill="#9945FF" />
+    <circle cx="145" cy="145" r="4" fill="#9945FF" />
+    <circle cx="355" cy="145" r="4" fill="#9945FF" />
+    <circle cx="145" cy="355" r="4" fill="#9945FF" />
+    
+    <!-- Data Flow Lines -->
+    <path d="M100,250 Q175,200 250,250 Q325,300 400,250" stroke="#14F195" stroke-width="1" opacity="0.6" />
+    <path d="M250,100 Q300,175 250,250 Q200,325 250,400" stroke="#4374f8" stroke-width="1" opacity="0.6" />
+  </g>
+  
+  <!-- Wave Chart Lines - Representing Prediction Market -->
+  <g transform="translate(0,380) scale(1,0.2)">
+    <path d="M0,0 C100,100 170,-80 250,0 C330,80 400,-50 500,0" stroke="#14F195" stroke-width="2" fill="none" opacity="0.5" />
+  </g>
+  
+  <!-- Glass Effect Ribbon - Representing Liquidity and Solana Speed -->
+  <path d="M150,150 C200,100 300,100 350,150 S400,250 350,350 S200,400 150,350 S100,250 150,150" 
+        fill="none" stroke="url(#mainGradient)" stroke-width="1" opacity="0.2" />
+  
+  <!-- Logo Text -->
+  <g transform="translate(250,350)">
+    <!-- Text Shadow Effect -->
+    <text x="0" y="0" font-family="'Helvetica Neue', Arial, sans-serif" font-size="45" font-weight="700" text-anchor="middle" fill="#080818" filter="url(#emboss)">SwarmAI</text>
+    
+    <!-- Main Text -->
+    <text x="0" y="0" font-family="'Helvetica Neue', Arial, sans-serif" font-size="45" font-weight="700" text-anchor="middle" fill="white">SwarmAI</text>
+    
+    <!-- Gradient Highlight Effect -->
+    <text x="0" y="0" font-family="'Helvetica Neue', Arial, sans-serif" font-size="45" font-weight="700" text-anchor="middle" fill="url(#highlightGradient)" opacity="0.7">SwarmAI</text>
+  </g>
+</svg> 
