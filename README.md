@@ -104,10 +104,4 @@ npm run build
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Contact
-
-- Website: [SwarmAI.io](https://swarmai.io)
-- Twitter: [@SwarmAI](https://twitter.com/swarmai)
-- Discord: [SwarmAI Community](https://discord.gg/swarmai) 
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details. 
