@@ -1,7 +1,7 @@
 <div align="center">
   <h1>SwarmAI</h1>
   
-  <img src="https://raw.githubusercontent.com/SwarmAIxyz/SwarmAI/master/assets/logo.svg" alt="SwarmAI Logo" width="200" height="200">
+  <img src="assets/logo.png" alt="SwarmAI Logo" width="300" height="300" style="border-radius: 50%;">
   
   <p>AI-Driven Prediction Network on Solana</p>
 </div>
